@@ -1,0 +1,75 @@
+
+.dragger 
+{
+	width:16px;
+	height:16px;
+	right:4px;
+	top:4px;
+	border:1px solid #ece9d8;
+	position:absolute;
+	background-image:url("system/modules/templateinfo/move.png");
+	background-repeat: no-repeat; 
+	background-position: 0 0;
+
+}
+
+div.templateinfo 
+{
+	border: 1px solid red;
+	margin: 8px;
+	padding: 8px;
+	background-color:#eeeeee;
+}
+
+.TemplateInfoBox 
+{
+	position:absolute;
+	left:63px;
+	top:123px;
+	width:203px;
+	z-index:1;
+	border:1px solid #9EB858;
+    margin:8px 8px 8px 8px;
+    background:#f6f6f6;
+}
+
+.TemplateInfoHeader
+{
+	height:24;
+    background:#f6f6f6;
+	text-align:center;
+	border-bottom:1px solid #ccc;
+	font-size:16px;
+}
+
+
+a.infobox {
+	border-bottom: 1px dashed #c30;
+	text-decoration: none;
+}
+
+a.infobox:hover {
+	cursor: help;
+	color: #c30;
+	background: white;
+}
+
+a.infobox span {
+	visibility: hidden;
+	position: absolute;
+	left: -99em;
+	margin-top: 1.5em;
+	padding: 1em;
+	text-decoration: none;
+}
+
+a.infobox:hover span,a.infobox:focus span,a.infobox:active span {
+	visibility: visible;
+	left: 1em;
+	border: 1px solid #c30;
+	color: blue;
+	background-color: white;
+	z-index: 99;
+	width: 80%;
+	display: block;
+}
